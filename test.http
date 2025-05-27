@@ -1,0 +1,194 @@
+### Join quiz user1
+POST http://localhost:8080/api/join
+Content-Type: application/json
+
+{
+  "quiz_id": "quiz1",
+  "user_id": "user1"
+}
+
+### Join quiz user2
+POST http://localhost:8080/api/join
+Content-Type: application/json
+
+{
+  "quiz_id": "quiz1",
+  "user_id": "user2"
+}
+
+### Join quiz user3
+POST http://localhost:8080/api/join
+Content-Type: application/json
+
+{
+  "quiz_id": "quiz1",
+  "user_id": "user3"
+}
+
+### Submit answer user1 - Q1
+POST http://localhost:8080/api/answer
+Content-Type: application/json
+
+{
+  "quiz_id": "quiz1",
+  "user_id": "user1",
+  "question_id": "1",
+  "answer": "Paris"
+}
+
+### Submit answer user2 - Q1
+POST http://localhost:8080/api/answer
+Content-Type: application/json
+
+{
+  "quiz_id": "quiz1",
+  "user_id": "user2",
+  "question_id": "1",
+  "answer": "London"
+}
+
+### Submit answer user3 - Q1
+POST http://localhost:8080/api/answer
+Content-Type: application/json
+
+{
+  "quiz_id": "quiz1",
+  "user_id": "user3",
+  "question_id": "1",
+  "answer": "Paris"
+}
+
+### Submit answer user1 - Q2
+POST http://localhost:8080/api/answer
+Content-Type: application/json
+
+{
+  "quiz_id": "quiz1",
+  "user_id": "user1",
+  "question_id": "2",
+  "answer": "4"
+}
+
+### Submit answer user2 - Q2
+POST http://localhost:8080/api/answer
+Content-Type: application/json
+
+{
+  "quiz_id": "quiz1",
+  "user_id": "user2",
+  "question_id": "2",
+  "answer": "4"
+}
+
+### Submit answer user3 - Q2
+POST http://localhost:8080/api/answer
+Content-Type: application/json
+
+{
+  "quiz_id": "quiz1",
+  "user_id": "user3",
+  "question_id": "2",
+  "answer": "5"
+}
+
+### Submit answer user1 - Q3
+POST http://localhost:8080/api/answer
+Content-Type: application/json
+
+{
+  "quiz_id": "quiz1",
+  "user_id": "user1",
+  "question_id": "3",
+  "answer": "Blue"
+}
+
+### Submit answer user2 - Q3
+POST http://localhost:8080/api/answer
+Content-Type: application/json
+
+{
+  "quiz_id": "quiz1",
+  "user_id": "user2",
+  "question_id": "3",
+  "answer": "Red"
+}
+
+### Submit answer user3 - Q3
+POST http://localhost:8080/api/answer
+Content-Type: application/json
+
+{
+  "quiz_id": "quiz1",
+  "user_id": "user3",
+  "question_id": "3",
+  "answer": "Blue"
+}
+
+### Submit answer user1 - Q4
+POST http://localhost:8080/api/answer
+Content-Type: application/json
+
+{
+  "quiz_id": "quiz1",
+  "user_id": "user1",
+  "question_id": "4",
+  "answer": "Mars"
+}
+
+### Submit answer user2 - Q4
+POST http://localhost:8080/api/answer
+Content-Type: application/json
+
+{
+  "quiz_id": "quiz1",
+  "user_id": "user2",
+  "question_id": "4",
+  "answer": "Venus"
+}
+
+### Submit answer user3 - Q4
+POST http://localhost:8080/api/answer
+Content-Type: application/json
+
+{
+  "quiz_id": "quiz1",
+  "user_id": "user3",
+  "question_id": "4",
+  "answer": "Mars"
+}
+
+### Submit answer user1 - Q5
+POST http://localhost:8080/api/answer
+Content-Type: application/json
+
+{
+  "quiz_id": "quiz1",
+  "user_id": "user1",
+  "question_id": "5",
+  "answer": "Pacific"
+}
+
+### Submit answer user2 - Q5
+POST http://localhost:8080/api/answer
+Content-Type: application/json
+
+{
+  "quiz_id": "quiz1",
+  "user_id": "user2",
+  "question_id": "5",
+  "answer": "Atlantic"
+}
+
+### Submit answer user3 - Q5
+POST http://localhost:8080/api/answer
+Content-Type: application/json
+
+{
+  "quiz_id": "quiz1",
+  "user_id": "user3",
+  "question_id": "5",
+  "answer": "Pacific"
+}
+
+### Get leaderboard
+GET http://localhost:8080/api/leaderboard?quiz_id=quiz1
